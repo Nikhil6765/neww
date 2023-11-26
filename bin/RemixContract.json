@@ -1,0 +1,513 @@
+{
+    "contractName": "RemixContract",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [],
+            "name": "defaultGreeting",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "str",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "getGreeting",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "_message",
+                    "type": "string"
+                }
+            ],
+            "name": "setGreeting",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"defaultGreeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"str\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getGreeting\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"}],\"name\":\"setGreeting\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/DELL/OneDrive/Desktop/neww/getset.sol\":\"RemixContract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/DELL/OneDrive/Desktop/neww/getset.sol\":{\"keccak256\":\"0xd25c5d094d172dd7939613ecfdeaa80f05b4e09f94fb49190cade2e14f92bb73\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5a92d6500b88ef690ffa12e397aab76b973a422c25c09e593f3063ee64822704\",\"dweb:/ipfs/QmW5wgxhyDzJbYyHPGHvzwpXnjHxirwbtDP7aSKzVJWT5f\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5060408051808201909152600c81526b090cad8d8de4082e6d0d2e6d60a31b602082015260009061004190826100e6565b506101a5565b634e487b7160e01b600052604160045260246000fd5b600181811c9082168061007157607f821691505b60208210810361009157634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156100e157600081815260208120601f850160051c810160208610156100be5750805b601f850160051c820191505b818110156100dd578281556001016100ca565b5050505b505050565b81516001600160401b038111156100ff576100ff610047565b6101138161010d845461005d565b84610097565b602080601f83116001811461014857600084156101305750858301515b600019600386901b1c1916600185901b1785556100dd565b600085815260208120601f198616915b8281101561017757888601518255948401946001909101908401610158565b50858210156101955787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b6103d5806101b46000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063791baac414610046578063a413686214610082578063fe50cc7214610097575b600080fd5b60408051808201909152600e81526d08e9a408ce4deda4082e6d0d2e6d60931b60208201525b6040516100799190610141565b60405180910390f35b6100956100903660046101a5565b61009f565b005b61006c6100af565b60006100ab82826102df565b5050565b6060600080546100be90610256565b80601f01602080910402602001604051908101604052809291908181526020018280546100ea90610256565b80156101375780601f1061010c57610100808354040283529160200191610137565b820191906000526020600020905b81548152906001019060200180831161011a57829003601f168201915b5050505050905090565b600060208083528351808285015260005b8181101561016e57858101830151858201604001528201610152565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156101b757600080fd5b813567ffffffffffffffff808211156101cf57600080fd5b818401915084601f8301126101e357600080fd5b8135818111156101f5576101f561018f565b604051601f8201601f19908116603f0116810190838211818310171561021d5761021d61018f565b8160405282815287602084870101111561023657600080fd5b826020860160208301376000928101602001929092525095945050505050565b600181811c9082168061026a57607f821691505b60208210810361028a57634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156102da57600081815260208120601f850160051c810160208610156102b75750805b601f850160051c820191505b818110156102d6578281556001016102c3565b5050505b505050565b815167ffffffffffffffff8111156102f9576102f961018f565b61030d816103078454610256565b84610290565b602080601f831160018114610342576000841561032a5750858301515b600019600386901b1c1916600185901b1785556102d6565b600085815260208120601f198616915b8281101561037157888601518255948401946001909101908401610352565b508582101561038f5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212202baa82c9f85749b098487e796d746c03c340b6c2018de87b2fe9a585858564de64736f6c63430008130033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063791baac414610046578063a413686214610082578063fe50cc7214610097575b600080fd5b60408051808201909152600e81526d08e9a408ce4deda4082e6d0d2e6d60931b60208201525b6040516100799190610141565b60405180910390f35b6100956100903660046101a5565b61009f565b005b61006c6100af565b60006100ab82826102df565b5050565b6060600080546100be90610256565b80601f01602080910402602001604051908101604052809291908181526020018280546100ea90610256565b80156101375780601f1061010c57610100808354040283529160200191610137565b820191906000526020600020905b81548152906001019060200180831161011a57829003601f168201915b5050505050905090565b600060208083528351808285015260005b8181101561016e57858101830151858201604001528201610152565b506000604082860101526040601f19601f8301168501019250505092915050565b634e487b7160e01b600052604160045260246000fd5b6000602082840312156101b757600080fd5b813567ffffffffffffffff808211156101cf57600080fd5b818401915084601f8301126101e357600080fd5b8135818111156101f5576101f561018f565b604051601f8201601f19908116603f0116810190838211818310171561021d5761021d61018f565b8160405282815287602084870101111561023657600080fd5b826020860160208301376000928101602001929092525095945050505050565b600181811c9082168061026a57607f821691505b60208210810361028a57634e487b7160e01b600052602260045260246000fd5b50919050565b601f8211156102da57600081815260208120601f850160051c810160208610156102b75750805b601f850160051c820191505b818110156102d6578281556001016102c3565b5050505b505050565b815167ffffffffffffffff8111156102f9576102f961018f565b61030d816103078454610256565b84610290565b602080601f831160018114610342576000841561032a5750858301515b600019600386901b1c1916600185901b1785556102d6565b600085815260208120601f198616915b8281101561037157888601518255948401946001909101908401610352565b508582101561038f5787850151600019600388901b60f8161c191681555b5050505050600190811b0190555056fea26469706673582212202baa82c9f85749b098487e796d746c03c340b6c2018de87b2fe9a585858564de64736f6c63430008130033",
+    "sourceMap": "57:411:0:-:0;;;107:55;;;;;;;;;-1:-1:-1;131:24:0;;;;;;;;;;;;-1:-1:-1;;;131:24:0;;;;-1:-1:-1;;131:24:0;;-1:-1:-1;131:24:0;:::i;:::-;;57:411;;14:127:1;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:380;225:1;221:12;;;;268;;;289:61;;343:4;335:6;331:17;321:27;;289:61;396:2;388:6;385:14;365:18;362:38;359:161;;442:10;437:3;433:20;430:1;423:31;477:4;474:1;467:15;505:4;502:1;495:15;359:161;;146:380;;;:::o;657:545::-;759:2;754:3;751:11;748:448;;;795:1;820:5;816:2;809:17;865:4;861:2;851:19;935:2;923:10;919:19;916:1;912:27;906:4;902:38;971:4;959:10;956:20;953:47;;;-1:-1:-1;994:4:1;953:47;1049:2;1044:3;1040:12;1037:1;1033:20;1027:4;1023:31;1013:41;;1104:82;1122:2;1115:5;1112:13;1104:82;;;1167:17;;;1148:1;1137:13;1104:82;;;1108:3;;;748:448;657:545;;;:::o;1378:1352::-;1498:10;;-1:-1:-1;;;;;1520:30:1;;1517:56;;;1553:18;;:::i;:::-;1582:97;1672:6;1632:38;1664:4;1658:11;1632:38;:::i;:::-;1626:4;1582:97;:::i;:::-;1734:4;;1798:2;1787:14;;1815:1;1810:663;;;;2517:1;2534:6;2531:89;;;-1:-1:-1;2586:19:1;;;2580:26;2531:89;-1:-1:-1;;1335:1:1;1331:11;;;1327:24;1323:29;1313:40;1359:1;1355:11;;;1310:57;2633:81;;1780:944;;1810:663;604:1;597:14;;;641:4;628:18;;-1:-1:-1;;1846:20:1;;;1964:236;1978:7;1975:1;1972:14;1964:236;;;2067:19;;;2061:26;2046:42;;2159:27;;;;2127:1;2115:14;;;;1994:19;;1964:236;;;1968:3;2228:6;2219:7;2216:19;2213:201;;;2289:19;;;2283:26;-1:-1:-1;;2372:1:1;2368:14;;;2384:3;2364:24;2360:37;2356:42;2341:58;2326:74;;2213:201;-1:-1:-1;;;;;2460:1:1;2444:14;;;2440:22;2427:36;;-1:-1:-1;1378:1352:1:o;:::-;57:411:0;;;;;;",
+    "deployedSourceMap": "57:411:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:109;434:25;;;;;;;;;;;;-1:-1:-1;;;434:25:0;;;;357:109;;;;;;;:::i;:::-;;;;;;;;264:87;;;;;;:::i;:::-;;:::i;:::-;;168:90;;;:::i;264:87::-;326:7;:18;336:8;326:7;:18;:::i;:::-;;264:87;:::o;168:90::-;212:13;244:7;237:14;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;168:90;:::o;14:548:1:-;126:4;155:2;184;173:9;166:21;216:6;210:13;259:6;254:2;243:9;239:18;232:34;284:1;294:140;308:6;305:1;302:13;294:140;;;403:14;;;399:23;;393:30;369:17;;;388:2;365:26;358:66;323:10;;294:140;;;298:3;483:1;478:2;469:6;458:9;454:22;450:31;443:42;553:2;546;542:7;537:2;529:6;525:15;521:29;510:9;506:45;502:54;494:62;;;;14:548;;;;:::o;567:127::-;628:10;623:3;619:20;616:1;609:31;659:4;656:1;649:15;683:4;680:1;673:15;699:922;768:6;821:2;809:9;800:7;796:23;792:32;789:52;;;837:1;834;827:12;789:52;877:9;864:23;906:18;947:2;939:6;936:14;933:34;;;963:1;960;953:12;933:34;1001:6;990:9;986:22;976:32;;1046:7;1039:4;1035:2;1031:13;1027:27;1017:55;;1068:1;1065;1058:12;1017:55;1104:2;1091:16;1126:2;1122;1119:10;1116:36;;;1132:18;;:::i;:::-;1207:2;1201:9;1175:2;1261:13;;-1:-1:-1;;1257:22:1;;;1281:2;1253:31;1249:40;1237:53;;;1305:18;;;1325:22;;;1302:46;1299:72;;;1351:18;;:::i;:::-;1391:10;1387:2;1380:22;1426:2;1418:6;1411:18;1466:7;1461:2;1456;1452;1448:11;1444:20;1441:33;1438:53;;;1487:1;1484;1477:12;1438:53;1543:2;1538;1534;1530:11;1525:2;1517:6;1513:15;1500:46;1588:1;1566:15;;;1583:2;1562:24;1555:35;;;;-1:-1:-1;1570:6:1;699:922;-1:-1:-1;;;;;699:922:1:o;1626:380::-;1705:1;1701:12;;;;1748;;;1769:61;;1823:4;1815:6;1811:17;1801:27;;1769:61;1876:2;1868:6;1865:14;1845:18;1842:38;1839:161;;1922:10;1917:3;1913:20;1910:1;1903:31;1957:4;1954:1;1947:15;1985:4;1982:1;1975:15;1839:161;;1626:380;;;:::o;2137:545::-;2239:2;2234:3;2231:11;2228:448;;;2275:1;2300:5;2296:2;2289:17;2345:4;2341:2;2331:19;2415:2;2403:10;2399:19;2396:1;2392:27;2386:4;2382:38;2451:4;2439:10;2436:20;2433:47;;;-1:-1:-1;2474:4:1;2433:47;2529:2;2524:3;2520:12;2517:1;2513:20;2507:4;2503:31;2493:41;;2584:82;2602:2;2595:5;2592:13;2584:82;;;2647:17;;;2628:1;2617:13;2584:82;;;2588:3;;;2228:448;2137:545;;;:::o;2858:1352::-;2984:3;2978:10;3011:18;3003:6;3000:30;2997:56;;;3033:18;;:::i;:::-;3062:97;3152:6;3112:38;3144:4;3138:11;3112:38;:::i;:::-;3106:4;3062:97;:::i;:::-;3214:4;;3278:2;3267:14;;3295:1;3290:663;;;;3997:1;4014:6;4011:89;;;-1:-1:-1;4066:19:1;;;4060:26;4011:89;-1:-1:-1;;2815:1:1;2811:11;;;2807:24;2803:29;2793:40;2839:1;2835:11;;;2790:57;4113:81;;3260:944;;3290:663;2084:1;2077:14;;;2121:4;2108:18;;-1:-1:-1;;3326:20:1;;;3444:236;3458:7;3455:1;3452:14;3444:236;;;3547:19;;;3541:26;3526:42;;3639:27;;;;3607:1;3595:14;;;;3474:19;;3444:236;;;3448:3;3708:6;3699:7;3696:19;3693:201;;;3769:19;;;3763:26;-1:-1:-1;;3852:1:1;3848:14;;;3864:3;3844:24;3840:37;3836:42;3821:58;3806:74;;3693:201;-1:-1:-1;;;;;3940:1:1;3924:14;;;3920:22;3907:36;;-1:-1:-1;2858:1352:1:o",
+    "sourcePath": "c:/Users/DELL/OneDrive/Desktop/neww/getset.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.19+commit.7dd6d404"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/DELL/OneDrive/Desktop/neww/getset.sol",
+        "exportedSymbols": {
+            "RemixContract": [
+                39
+            ]
+        },
+        "id": 40,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "RemixContract",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 39,
+                "linearizedBaseContracts": [
+                    39
+                ],
+                "name": "RemixContract",
+                "nameLocation": "66:13:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 3,
+                        "mutability": "mutable",
+                        "name": "message",
+                        "nameLocation": "93:7:0",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 39,
+                        "src": "86:14:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "86:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 10,
+                            "nodeType": "Block",
+                            "src": "121:41:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 8,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 6,
+                                            "name": "message",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "131:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "hexValue": "48656c6c6f20417368697368",
+                                            "id": 7,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "141:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_453bc0c3fc9ad8a6c39945400587ebe446dc9e6b864415b2f93b191636234ee4",
+                                                "typeString": "literal_string \"Hello Ashish\""
+                                            },
+                                            "value": "Hello Ashish"
+                                        },
+                                        "src": "131:24:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 9,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "131:24:0"
+                                }
+                            ]
+                        },
+                        "id": 11,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 4,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "118:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 5,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "121:0:0"
+                        },
+                        "scope": 39,
+                        "src": "107:55:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 18,
+                            "nodeType": "Block",
+                            "src": "227:31:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 16,
+                                        "name": "message",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 3,
+                                        "src": "244:7:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "functionReturnParameters": 15,
+                                    "id": 17,
+                                    "nodeType": "Return",
+                                    "src": "237:14:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "fe50cc72",
+                        "id": 19,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "getGreeting",
+                        "nameLocation": "177:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 12,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "188:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 15,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 14,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 19,
+                                    "src": "212:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 13,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "212:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "211:15:0"
+                        },
+                        "scope": 39,
+                        "src": "168:90:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 28,
+                            "nodeType": "Block",
+                            "src": "316:35:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 26,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 24,
+                                            "name": "message",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 3,
+                                            "src": "326:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage",
+                                                "typeString": "string storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 25,
+                                            "name": "_message",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 21,
+                                            "src": "336:8:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string memory"
+                                            }
+                                        },
+                                        "src": "326:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage",
+                                            "typeString": "string storage ref"
+                                        }
+                                    },
+                                    "id": 27,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "326:18:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "a4136862",
+                        "id": 29,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setGreeting",
+                        "nameLocation": "273:11:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 22,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 21,
+                                    "mutability": "mutable",
+                                    "name": "_message",
+                                    "nameLocation": "299:8:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 29,
+                                    "src": "285:22:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 20,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "285:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "284:24:0"
+                        },
+                        "returnParameters": {
+                            "id": 23,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "316:0:0"
+                        },
+                        "scope": 39,
+                        "src": "264:87:0",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 37,
+                            "nodeType": "Block",
+                            "src": "424:42:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "components": [
+                                            {
+                                                "hexValue": "474d2046726f6d20417368697368",
+                                                "id": 34,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "string",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "442:16:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_stringliteral_b4254c323b290780f6fdf87129deccd69599898fc6076d3ef32e8063022a27fa",
+                                                    "typeString": "literal_string \"GM From Ashish\""
+                                                },
+                                                "value": "GM From Ashish"
+                                            }
+                                        ],
+                                        "id": 35,
+                                        "isConstant": false,
+                                        "isInlineArray": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "lValueRequested": false,
+                                        "nodeType": "TupleExpression",
+                                        "src": "441:18:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_stringliteral_b4254c323b290780f6fdf87129deccd69599898fc6076d3ef32e8063022a27fa",
+                                            "typeString": "literal_string \"GM From Ashish\""
+                                        }
+                                    },
+                                    "functionReturnParameters": 33,
+                                    "id": 36,
+                                    "nodeType": "Return",
+                                    "src": "434:25:0"
+                                }
+                            ]
+                        },
+                        "functionSelector": "791baac4",
+                        "id": 38,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "defaultGreeting",
+                        "nameLocation": "366:15:0",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 30,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "381:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 33,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 32,
+                                    "mutability": "mutable",
+                                    "name": "str",
+                                    "nameLocation": "419:3:0",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 38,
+                                    "src": "405:17:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 31,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "405:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "404:19:0"
+                        },
+                        "scope": 39,
+                        "src": "357:109:0",
+                        "stateMutability": "pure",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 40,
+                "src": "57:411:0",
+                "usedErrors": []
+            }
+        ],
+        "src": "32:437:0"
+    },
+    "functionHashes": {
+        "defaultGreeting()": "791baac4",
+        "getGreeting()": "fe50cc72",
+        "setGreeting(string)": "a4136862"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "196200",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "defaultGreeting()": "infinite",
+            "getGreeting()": "infinite",
+            "setGreeting(string)": "infinite"
+        }
+    }
+}
